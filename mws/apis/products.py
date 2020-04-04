@@ -4,8 +4,8 @@ Amazon MWS Products API
 from __future__ import absolute_import
 # import warnings
 
-from ..mws import MWS
-from .. import utils
+from mws import MWS
+from mws import utils
 
 
 class Products(MWS):

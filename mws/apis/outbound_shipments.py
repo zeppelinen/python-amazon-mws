@@ -4,9 +4,8 @@ Amazon MWS Fulfillment Outbound Shipments API
 from __future__ import absolute_import
 # import warnings
 
-from ..mws import MWS
-# from .. import utils
-from ..decorators import next_token_action
+from mws import MWS
+from mws.decorators import next_token_action
 
 
 class OutboundShipments(MWS):

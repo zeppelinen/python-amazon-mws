@@ -4,9 +4,9 @@ Amazon MWS Reports API
 from __future__ import absolute_import
 from enum import Enum
 
-from ..mws import MWS
-from .. import utils
-from ..decorators import next_token_action
+from mws import MWS
+from mws import utils
+from mws.decorators import next_token_action
 
 # TODO Add Schedule enumerations as constants
 

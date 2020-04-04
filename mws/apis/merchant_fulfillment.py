@@ -3,8 +3,8 @@ Amazon MWS Merchant Fulfillment API
 """
 from __future__ import absolute_import
 
-from ..mws import MWS
-from .. import utils
+from mws import MWS
+from mws import utils
 
 
 class MerchantFulfillment(MWS):

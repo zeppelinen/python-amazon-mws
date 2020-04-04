@@ -3,9 +3,8 @@ Amazon MWS Subscriptions API
 """
 from __future__ import absolute_import
 
-from ..mws import MWS
-from .. import utils
-# from .. import utils
+from mws import MWS
+from mws import utils
 
 # TODO include NotificationType enumeration
 # TODO set up a basic object for Subscription and Destination types?

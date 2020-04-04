@@ -3,8 +3,8 @@ Amazon MWS Sellers API
 """
 from __future__ import absolute_import
 
-from ..mws import MWS
-from ..decorators import next_token_action
+from mws import MWS
+from mws.decorators import next_token_action
 
 
 class Sellers(MWS):

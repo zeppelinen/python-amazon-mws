@@ -3,9 +3,8 @@ Amazon MWS Finances API
 """
 from __future__ import absolute_import
 
-from ..mws import MWS
-# from .. import utils
-from ..decorators import next_token_action
+from mws import MWS
+from mws.decorators import next_token_action
 
 
 class Finances(MWS):
