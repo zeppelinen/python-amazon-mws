@@ -24,6 +24,7 @@ try:
     from urllib.parse import quote
 except ImportError:
     from urllib import quote
+import xml.etree.ElementTree
 from xml.etree.ElementTree import ParseError as XMLError
 
 
@@ -323,6 +324,9 @@ class MWS(object):
 
             except XMLError:
                 parsed_response = DataWrapper(data, response.headers)
+            except xml.etree.ElementTree.ParseError:
+                parsed_response = DataWrapper(data, response.headers)
+
 
         except HTTPError as exc:
             error = MWSError(str(exc.response.text))
